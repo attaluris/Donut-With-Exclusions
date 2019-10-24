@@ -1,6 +1,44 @@
 import random 
 
-history = {'Leo': ['Parham', 'Akhil', 'Zarine', 'Leo', 'Sri', 'David', 'Jeff', 'Ariana', 'Steven'], 'Sri': ['Sophea', 'Steven', 'Kenneth', 'Leo', 'Sri', 'David', 'Jeff', 'Ariana', 'Sameer'], 'David': ['Drew', 'Anika', 'Abi', 'Leo', 'Sri', 'David', 'Jeff', 'Ariana', 'Sara'], 'Jeff': ['Jasmine', 'McAllister', 'Jeena', 'Leo', 'Sri', 'David', 'Jeff', 'Ariana', 'Parham'], 'Ariana': ['Ani', 'Vedant', 'McAllister', 'Leo', 'Sri', 'David', 'Jeff', 'Ariana', 'Divya'], 'Anika': ['David', 'Aiyush', 'Priya', 'Anika', 'Akhil', 'Meghan', 'Jasmine', 'Daniel', 'Ratan', 'Steven', 'Sophea'], 'Akhil': ['Abi', 'Leo', 'Warren', 'Anika', 'Akhil', 'Meghan', 'Jasmine', 'Daniel', 'Ratan', 'Steven', 'Kelly'], 'Meghan': ['McAllister', 'Isabelle', 'Ritik', 'Anika', 'Akhil', 'Meghan', 'Jasmine', 'Daniel', 'Ratan', 'Steven', 'Gracie '], 'Jasmine': ['Jeff', 'Zarine', 'Jared', 'Anika', 'Akhil', 'Meghan', 'Jasmine', 'Daniel', 'Ratan', 'Steven', 'Priya'], 'Daniel': ['Divya', 'Sophea', 'Vedant', 'Anika', 'Akhil', 'Meghan', 'Jasmine', 'Daniel', 'Ratan', 'Steven', 'Ritik'], 'Ratan': ['Ritik', 'Bindu', 'Drew', 'Anika', 'Akhil', 'Meghan', 'Jasmine', 'Daniel', 'Ratan', 'Steven', 'Isabelle'], 'Steven': ['Shreya', 'Sri', 'Ria', 'Anika', 'Akhil', 'Meghan', 'Jasmine', 'Daniel', 'Ratan', 'Steven', 'Leo'], 'Ritik': ['Ratan', 'Sara', 'Meghan', 'Ritik', 'Priya', 'Isabelle', 'McAllister', 'Warren', 'Vedant', 'Ria', 'Daniel'], 'Priya': ['Sameer', 'Sara', 'Anika', 'Ritik', 'Priya', 'Isabelle', 'McAllister', 'Warren', 'Vedant', 'Ria', 'Jasmine'], 'Isabelle': ['Gracie', 'Meghan', 'Aiyush', 'Ritik', 'Priya', 'Isabelle', 'McAllister', 'Warren', 'Vedant', 'Ria', 'Ratan', 'Drew'], 'McAllister': ['Meghan', 'Jeff', 'Ariana', 'Ritik', 'Priya', 'Isabelle', 'McAllister', 'Warren', 'Vedant', 'Ria', 'Jeena'], 'Warren': ['Vedant', 'Abi', 'Akhil', 'Zarine', 'Ritik', 'Priya', 'Isabelle', 'McAllister', 'Warren', 'Vedant', 'Ria', 'Chanan'], 'Vedant': ['Zarine', 'Ani', 'Daniel', 'Warren', 'Ritik', 'Priya', 'Isabelle', 'McAllister', 'Warren', 'Vedant', 'Ria', 'Jared'], 'Ria': ['Sara', 'Duy', 'Steven', 'Ritik', 'Priya', 'Isabelle', 'McAllister', 'Warren', 'Vedant', 'Ria', 'Kenneth'], 'Zarine': ['Warren', 'Jasmine', 'Leo', 'Vedant', 'Zarine', 'Jeena', 'Shreya', 'Sophea', 'Aiyush ', 'Parham', 'Abi'], 'Jeena': ['Jared', 'Jeff', 'Kelly', 'Zarine', 'Jeena', 'Shreya', 'Sophea', 'Aiyush ', 'Parham', 'McAllister'], 'Shreya': ['Steven', 'Drew', 'Sara', 'Zarine', 'Jeena', 'Shreya', 'Sophea', 'Aiyush ', 'Parham', 'Bindu'], 'Sophea': ['Sri', 'Daniel', 'Jared', 'Zarine', 'Jeena', 'Shreya', 'Sophea', 'Aiyush ', 'Parham', 'Anika'], 'Aiyush ': ['Anika', 'Chanan', 'Isabelle', 'Zarine', 'Jeena', 'Shreya', 'Sophea', 'Aiyush ', 'Parham', 'Ani'], 'Parham': ['Leo', 'Divya', 'Chanan', 'Zarine', 'Jeena', 'Shreya', 'Sophea', 'Aiyush ', 'Parham', 'Jeff'], 'Sara': ['Ria', 'Ritik', 'Shreya', 'Sara', 'Sameer', 'Kenneth', 'Gracie ', 'Bindu', 'Abi', 'David'], 'Sameer': ['Priya', 'Sara', 'Divya', 'Sara', 'Sameer', 'Kenneth', 'Gracie ', 'Bindu', 'Abi', 'Sri'], 'Kenneth': ['Kelly', 'Ariana', 'Sri', 'Sara', 'Sameer', 'Kenneth', 'Gracie ', 'Bindu', 'Abi', 'Ria'], 'Gracie ': ['Isabelle', 'Kelly', 'Ani', 'Sara', 'Sameer', 'Kenneth', 'Gracie ', 'Bindu', 'Abi', 'Meghan'], 'Bindu': ['Chanan', 'Ratan', 'Inbar', 'Sara', 'Sameer', 'Kenneth', 'Gracie ', 'Bindu', 'Abi', 'Shreya'], 'Abi': ['Akhil', 'Warren', 'David', 'Sara', 'Sameer', 'Kenneth', 'Gracie ', 'Bindu', 'Abi', 'Zarine'], 'Ani': ['Ariana', 'Vedant', 'Gracie', 'Aiyush ', 'Ani'], 'Divya': ['Daniel', 'Parham', 'Sameer', 'Ariana', 'Divya'], 'Kelly': ['Kenneth', 'Gracie', 'Jeena', 'Akhil', 'Kelly'], 'Jared': ['Jeena', 'Jasmine', 'Sophea', 'Vedant', 'Jared'], 'Drew': ['David', 'Shreya', 'Ratan', 'Isabelle', 'Drew'], 'Chanan': ['Bindu', 'Aiyush', 'Parham', 'Warren', 'Chanan'], 'Duy': ['Ria', 'Meghan', 'Ritik', 'Duy', 'Drew', 'Ratan', 'Isabelle']}
+history = {'Leo': ['Parham', 'Akhil', 'Zarine', 'Leo', 'Sri', 'David', 'Jeff', 'Ariana', 'Steven'],
+ 'Sri': ['Sophea', 'Steven', 'Kenneth', 'Leo', 'Sri', 'David', 'Jeff', 'Ariana', 'Sameer'],
+ 'David': ['Drew', 'Anika', 'Abi', 'Leo', 'Sri', 'David', 'Jeff', 'Ariana', 'Sara'],
+ 'Jeff': ['Jasmine', 'McAllister', 'Jeena', 'Leo', 'Sri', 'David', 'Jeff', 'Ariana', 'Parham'],
+ 'Ariana': ['Ani', 'Vedant', 'McAllister', 'Leo', 'Sri', 'David', 'Jeff', 'Ariana', 'Divya'],
+ 'Anika': ['David', 'Aiyush', 'Priya', 'Anika', 'Akhil', 'Meghan', 'Jasmine', 'Daniel', 'Ratan', 'Steven', 'Sophea'],
+ 'Akhil': ['Abi', 'Leo', 'Warren', 'Anika', 'Akhil', 'Meghan', 'Jasmine', 'Daniel', 'Ratan', 'Steven', 'Kelly'],
+ 'Meghan': ['McAllister', 'Isabelle', 'Ritik', 'Anika', 'Akhil', 'Meghan', 'Jasmine', 'Daniel', 'Ratan', 'Steven', 'Gracie','Duy'],
+ 'Jasmine': ['Jeff', 'Zarine', 'Jared', 'Anika', 'Akhil', 'Meghan', 'Jasmine', 'Daniel', 'Ratan', 'Steven', 'Priya'],
+ 'Daniel': ['Divya', 'Sophea', 'Vedant', 'Anika', 'Akhil', 'Meghan', 'Jasmine', 'Daniel', 'Ratan', 'Steven', 'Ritik'],
+ 'Ratan': ['Ritik', 'Bindu', 'Drew', 'Anika', 'Akhil', 'Meghan', 'Jasmine', 'Daniel', 'Ratan', 'Steven', 'Isabelle','Duy'],
+ 'Steven': ['Shreya', 'Sri', 'Ria', 'Anika', 'Akhil', 'Meghan', 'Jasmine', 'Daniel', 'Ratan', 'Steven', 'Leo'],
+ 'Ritik': ['Ratan', 'Sara', 'Meghan', 'Ritik', 'Priya', 'Isabelle', 'Warren', 'Vedant', 'Ria', 'Daniel','Duy'],
+ 'Priya': ['Sameer', 'Sara', 'Anika', 'Ritik', 'Priya', 'Isabelle', 'Warren', 'Vedant', 'Ria', 'Jasmine'],
+ 'Isabelle': ['Gracie', 'Meghan', 'Aiyush', 'Ritik', 'Priya', 'Isabelle', 'Warren', 'Vedant', 'Ria', 'Ratan', 'Drew','Duy'],
+ 'McAllister': ['Meghan', 'Jeff', 'Ariana', 'Zarine', 'Jeena', 'Shreya', 'Sophea', 'Aiyush', 'Parham','Sara','McAllister'],
+ 'Warren': ['Vedant', 'Abi', 'Akhil', 'Zarine', 'Ritik', 'Priya', 'Isabelle', 'Warren', 'Vedant', 'Ria', 'Chanan'],
+ 'Vedant': ['Zarine', 'Ani', 'Daniel', 'Warren', 'Ritik', 'Priya', 'Isabelle', 'Warren', 'Vedant', 'Ria', 'Jared'],
+ 'Ria': ['Sara', 'Duy', 'Steven', 'Ritik', 'Priya', 'Isabelle', 'Warren', 'Vedant', 'Ria', 'Kenneth'],
+ 'Zarine': ['Warren', 'Jasmine', 'Leo', 'Vedant', 'Zarine', 'Jeena', 'Shreya', 'Sophea', 'Aiyush', 'Parham', 'Abi','McAllister'],
+ 'Jeena': ['Jared', 'Jeff', 'Kelly', 'Zarine', 'Jeena', 'Shreya', 'Sophea', 'Aiyush', 'Parham', 'McAllister'],
+ 'Shreya': ['Steven', 'Drew', 'Sara', 'Zarine', 'Jeena', 'Shreya', 'Sophea', 'Aiyush', 'Parham', 'Bindu','McAllister'],
+ 'Sophea': ['Sri', 'Daniel', 'Jared', 'Zarine', 'Jeena', 'Shreya', 'Sophea', 'Aiyush', 'Parham', 'Anika','McAllister'],
+ 'Aiyush': ['Anika', 'Chanan', 'Isabelle', 'Zarine', 'Jeena', 'Shreya', 'Sophea', 'Aiyush', 'Parham', 'Ani','McAllister'],
+ 'Parham': ['Leo', 'Divya', 'Chanan', 'Zarine', 'Jeena', 'Shreya', 'Sophea', 'Aiyush', 'Parham', 'Jeff','McAllister'],
+ 'Sara': ['Ria', 'Ritik', 'Shreya', 'Sara', 'Sameer', 'Kenneth', 'Gracie', 'Bindu', 'Abi', 'David','McAllister'],
+ 'Sameer': ['Priya', 'Sara', 'Divya', 'Sara', 'Sameer', 'Kenneth', 'Gracie', 'Bindu', 'Abi', 'Sri'],
+ 'Kenneth': ['Kelly', 'Ariana', 'Sri', 'Sara', 'Sameer', 'Kenneth', 'Gracie', 'Bindu', 'Abi', 'Ria'],
+ 'Gracie': ['Isabelle', 'Kelly', 'Ani', 'Sara', 'Sameer', 'Kenneth', 'Gracie', 'Bindu', 'Abi', 'Meghan'],
+ 'Bindu': ['Chanan', 'Ratan', 'Inbar', 'Sara', 'Sameer', 'Kenneth', 'Gracie', 'Bindu', 'Abi', 'Shreya'],
+ 'Abi': ['Akhil', 'Warren', 'David', 'Sara', 'Sameer', 'Kenneth', 'Gracie', 'Bindu', 'Abi', 'Zarine'],
+ 'Ani': ['Ariana', 'Vedant', 'Gracie', 'Aiyush', 'Ani'],
+ 'Divya': ['Daniel', 'Parham', 'Sameer', 'Ariana', 'Divya'],
+ 'Kelly': ['Kenneth', 'Gracie', 'Jeena', 'Akhil', 'Kelly'],
+ 'Jared': ['Jeena', 'Jasmine', 'Sophea', 'Vedant', 'Jared'],
+ 'Drew': ['David', 'Shreya', 'Ratan', 'Isabelle', 'Drew','Duy'],
+ 'Chanan': ['Bindu', 'Aiyush', 'Parham', 'Warren', 'Chanan'],
+ 'Duy': ['Ria', 'Meghan', 'Ritik', 'Duy', 'Drew', 'Ratan', 'Isabelle']}
+
 
 
 def add_groups_to_history(history, groups):
