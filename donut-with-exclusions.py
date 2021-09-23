@@ -93,6 +93,7 @@ def find_matches(history):
         print("no groups of three!")
     print(groups)
     history = add_groups_to_history(history, groups)
+    print("******************")
     print(history)
     
     
